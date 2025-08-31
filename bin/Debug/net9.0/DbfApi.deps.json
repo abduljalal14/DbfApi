@@ -1,0 +1,245 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v9.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v9.0": {
+      "DbfApi/1.0.0": {
+        "dependencies": {
+          "Microsoft.AspNetCore.OpenApi": "9.0.8",
+          "Swashbuckle.AspNetCore": "9.0.4",
+          "System.Data.OleDb": "9.0.8"
+        },
+        "runtime": {
+          "DbfApi.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.OpenApi/9.0.8": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.25"
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.AspNetCore.OpenApi.dll": {
+            "assemblyVersion": "9.0.8.0",
+            "fileVersion": "9.0.825.36808"
+          }
+        }
+      },
+      "Microsoft.Extensions.ApiDescription.Server/9.0.0": {},
+      "Microsoft.OpenApi/1.6.25": {
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.OpenApi.dll": {
+            "assemblyVersion": "1.6.25.0",
+            "fileVersion": "1.6.25.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/9.0.4": {
+        "dependencies": {
+          "Microsoft.Extensions.ApiDescription.Server": "9.0.0",
+          "Swashbuckle.AspNetCore.Swagger": "9.0.4",
+          "Swashbuckle.AspNetCore.SwaggerGen": "9.0.4",
+          "Swashbuckle.AspNetCore.SwaggerUI": "9.0.4"
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/9.0.4": {
+        "dependencies": {
+          "Microsoft.OpenApi": "1.6.25"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "9.0.4.0",
+            "fileVersion": "9.0.4.1727"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/9.0.4": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "9.0.4"
+        },
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "9.0.4.0",
+            "fileVersion": "9.0.4.1727"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/9.0.4": {
+        "runtime": {
+          "lib/net9.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "9.0.4.0",
+            "fileVersion": "9.0.4.1727"
+          }
+        }
+      },
+      "System.Configuration.ConfigurationManager/9.0.8": {
+        "dependencies": {
+          "System.Diagnostics.EventLog": "9.0.8",
+          "System.Security.Cryptography.ProtectedData": "9.0.8"
+        },
+        "runtime": {
+          "lib/net9.0/System.Configuration.ConfigurationManager.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      },
+      "System.Data.OleDb/9.0.8": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.8",
+          "System.Diagnostics.PerformanceCounter": "9.0.8"
+        },
+        "runtime": {
+          "lib/net9.0/System.Data.OleDb.dll": {
+            "assemblyVersion": "9.0.0.8",
+            "fileVersion": "9.0.825.36511"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Data.OleDb.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.8",
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      },
+      "System.Diagnostics.EventLog/9.0.8": {
+        "runtime": {
+          "lib/net9.0/System.Diagnostics.EventLog.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.EventLog.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      },
+      "System.Diagnostics.PerformanceCounter/9.0.8": {
+        "dependencies": {
+          "System.Configuration.ConfigurationManager": "9.0.8"
+        },
+        "runtime": {
+          "lib/net9.0/System.Diagnostics.PerformanceCounter.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        },
+        "runtimeTargets": {
+          "runtimes/win/lib/net9.0/System.Diagnostics.PerformanceCounter.dll": {
+            "rid": "win",
+            "assetType": "runtime",
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      },
+      "System.Security.Cryptography.ProtectedData/9.0.8": {
+        "runtime": {
+          "lib/net9.0/System.Security.Cryptography.ProtectedData.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.825.36511"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DbfApi/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Microsoft.AspNetCore.OpenApi/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BwF9sQCKmvu93C/pmKxJjPhF5fFB23MEcgTsGL+7W3wKLYawS4lyFSL5/qh00IJzuADLf+1SmvxMaphbyZYqQQ==",
+      "path": "microsoft.aspnetcore.openapi/9.0.8",
+      "hashPath": "microsoft.aspnetcore.openapi.9.0.8.nupkg.sha512"
+    },
+    "Microsoft.Extensions.ApiDescription.Server/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-1Kzzf7pRey40VaUkHN9/uWxrKVkLu2AQjt+GVeeKLLpiEHAJ1xZRsLSh4ZZYEnyS7Kt2OBOPmsXNdU+wbcOl5w==",
+      "path": "microsoft.extensions.apidescription.server/9.0.0",
+      "hashPath": "microsoft.extensions.apidescription.server.9.0.0.nupkg.sha512"
+    },
+    "Microsoft.OpenApi/1.6.25": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ZahSqNGtNV7N0JBYS/IYXPkLVexL/AZFxo6pqxv6A7Uli7Q7zfitNjkaqIcsV73Ukzxi4IlJdyDgcQiMXiH8cw==",
+      "path": "microsoft.openapi/1.6.25",
+      "hashPath": "microsoft.openapi.1.6.25.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-4hghaogMoS87Ivjj8s7aGuGsxrsjXZpjNvahLsN+zSLrZQcV8zQyiBweBd9AXC1sGkeNYb9/hbeS1EXrZ/hKjQ==",
+      "path": "swashbuckle.aspnetcore/9.0.4",
+      "hashPath": "swashbuckle.aspnetcore.9.0.4.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-syU8U4Eg3DfhU+BBeDUh66erwDsYOhp82InXbrOsqWP3qoOfQbBtePcTetkLNanovYHYX40alZBE6gQQFtBZkQ==",
+      "path": "swashbuckle.aspnetcore.swagger/9.0.4",
+      "hashPath": "swashbuckle.aspnetcore.swagger.9.0.4.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-GnCikaq7kagEckGGsrVnKl2icRQebyr14/7s3T/rQQO7edOIXkxtjTOJZqbazOxaTXBDCDdSInMiYbMQhFnE5Q==",
+      "path": "swashbuckle.aspnetcore.swaggergen/9.0.4",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.9.0.4.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/9.0.4": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2ugT2OvZsKHqk/2rMDmuqDuFmtix0NvzlXxAfnfHROVMTovbx7Z0UsOQHZa462DBTgdBFnR2Ss6wm4fypfymdA==",
+      "path": "swashbuckle.aspnetcore.swaggerui/9.0.4",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.9.0.4.nupkg.sha512"
+    },
+    "System.Configuration.ConfigurationManager/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-BR70HYY5jeOa/jBrd/wyydpuqhFyla2ybQRL/UPBIiSvctVqi18iQoM44Gx41jy7t6wuAdKuTnie6io4j8aq3w==",
+      "path": "system.configuration.configurationmanager/9.0.8",
+      "hashPath": "system.configuration.configurationmanager.9.0.8.nupkg.sha512"
+    },
+    "System.Data.OleDb/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wCEMwzzrCS6Rdv2nliZQTE+b5mwsEOivRAHrUwHd01SRqJgVxDOtHjFhGQBtMPVY5niT/bZ0bE+0kbKz4Vx2TA==",
+      "path": "system.data.oledb/9.0.8",
+      "hashPath": "system.data.oledb.9.0.8.nupkg.sha512"
+    },
+    "System.Diagnostics.EventLog/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-gebRF3JLLJ76jz1CQpvwezNapZUjFq20JQsaGHzBH0DzlkHBLpdhwkOei9usiOkIGMwU/L0ALWpNe1JE+5/itw==",
+      "path": "system.diagnostics.eventlog/9.0.8",
+      "hashPath": "system.diagnostics.eventlog.9.0.8.nupkg.sha512"
+    },
+    "System.Diagnostics.PerformanceCounter/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-9jQDqjiJ9VF9M2eVdT09gfU8yg5mhqEkfiZeB3hMjlYApNVJK6vXt9u5T8Oj5Hc+H9zNmrRzTjkXtEF5HcbAfg==",
+      "path": "system.diagnostics.performancecounter/9.0.8",
+      "hashPath": "system.diagnostics.performancecounter.9.0.8.nupkg.sha512"
+    },
+    "System.Security.Cryptography.ProtectedData/9.0.8": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-w7+KCnqmtDboV8dxTLxlUltasP7AgzNFdTLq1D/ey50ykgXW+CJBIQkzYZjgPzmjKB+/PGGUKYrH7TSbwrDtRw==",
+      "path": "system.security.cryptography.protecteddata/9.0.8",
+      "hashPath": "system.security.cryptography.protecteddata.9.0.8.nupkg.sha512"
+    }
+  }
+}
