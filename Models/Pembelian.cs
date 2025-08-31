@@ -14,6 +14,10 @@ public class Pembelian
     [JsonPropertyName("vendor")]
     public long Vendor { get; set; }
 
+    // Tambahkan properti baru untuk nama vendor
+    [JsonPropertyName("vendorNama")]
+    public string VendorNama { get; set; }
+
     [JsonPropertyName("totalHarga")]
     public decimal TotHarga { get; set; }
 }

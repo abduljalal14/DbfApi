@@ -26,16 +26,32 @@ public class DbfService
 
         using (var connection = new OleDbConnection(_connectionString))
         {
-            connection.Open();
-            string sqlQuery = $"SELECT ID, NO, TANGGAL, VENDOR, TOT_HARGA FROM s_pembel.dbf";
-            if (!string.IsNullOrWhiteSpace(filter))
+            try
             {
-                sqlQuery += $" WHERE NO LIKE '%{filter}%'";
-            }
+                connection.Open();
 
-            using (var adapter = new OleDbDataAdapter(sqlQuery, connection))
+                // PERUBAHAN DI SINI: Query SQL ditambahkan JOIN
+                string sqlQuery = @"
+                    SELECT 
+                        T1.ID, T1.NO, T1.TANGGAL, T1.VENDOR, T1.TOT_HARGA,
+                        T2.NAMA AS VendorNama
+                    FROM s_pembel.dbf AS T1
+                    INNER JOIN s_vendor.g8a AS T2 ON T1.VENDOR = T2.ID";
+
+                if (!string.IsNullOrWhiteSpace(filter))
+                {
+                    sqlQuery += $" WHERE T1.NO LIKE '%{filter}%' OR T2.NAMA LIKE '%{filter}%'";
+                }
+                
+                using (var adapter = new OleDbDataAdapter(sqlQuery, connection))
+                {
+                    adapter.Fill(fullData);
+                }
+            }
+            catch (Exception ex)
             {
-                adapter.Fill(fullData);
+                // Jika terjadi error, Anda bisa log atau melempar exception
+                return null;
             }
         }
 
@@ -53,17 +69,20 @@ public class DbfService
 
         foreach (DataRow row in pagedData)
         {
+            // PERUBAHAN DI SINI: Ambil nilai VendorNama dari DataRow
             result.Add(new Pembelian
             {
                 ID = Convert.ToInt64(row["ID"]),
                 No = row["NO"].ToString().Trim(),
                 Tanggal = Convert.ToDateTime(row["TANGGAL"]),
                 Vendor = Convert.ToInt64(row["VENDOR"]),
+                VendorNama = row["VendorNama"].ToString().Trim(),
                 TotHarga = Convert.ToDecimal(row["TOT_HARGA"])
             });
         }
         return result;
     }
+
 
     public List<PembelianDetail> GetPembelianDetail(long id)
     {

@@ -41,3 +41,4 @@ C:\Users\LENOVO\Documents\Programming\C#\DbfApi\obj\Debug\net9.0\refint\DbfApi.d
 C:\Users\LENOVO\Documents\Programming\C#\DbfApi\obj\Debug\net9.0\DbfApi.pdb
 C:\Users\LENOVO\Documents\Programming\C#\DbfApi\obj\Debug\net9.0\DbfApi.genruntimeconfig.cache
 C:\Users\LENOVO\Documents\Programming\C#\DbfApi\obj\Debug\net9.0\ref\DbfApi.dll
+C:\Users\LENOVO\Documents\Programming\C#\DbfApi\obj\Debug\net9.0\DbfApi.sourcelink.json
